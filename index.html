@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Видеособеседование 1 на 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Видеособеседование 1 на 1</h1>
+    <div id="status" class="status">Нажмите «Войти», чтобы начать</div>
+  </header>
+
+  <main>
+    <div class="videos">
+      <div class="video-box">
+        <video id="remoteVideo" autoplay playsinline></video>
+        <span class="label">Собеседник</span>
+        <div id="waiting" class="overlay hidden">Ожидаем собеседника…</div>
+      </div>
+      <div class="video-box small">
+        <video id="localVideo" autoplay playsinline muted></video>
+        <span class="label">Вы</span>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="joinBtn" class="primary">Войти в комнату</button>
+      <button id="micBtn" disabled>🎤 Микрофон: вкл</button>
+      <button id="camBtn" disabled>📷 Камера: вкл</button>
+      <button id="leaveBtn" class="danger" disabled>Завершить</button>
+    </div>
+    <p class="hint">Откройте эту страницу в двух окнах и нажмите «Войти» в обоих. Одновременно могут быть только двое.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
